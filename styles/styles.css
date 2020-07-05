@@ -1,0 +1,54 @@
+:root {
+	--text-color: #dcdcdc;
+	--background-color: black;
+}
+
+body {
+	margin: 0 auto;
+	max-width: 1000px;
+	background-color: var(--background-color);
+	color: var(--text-color);
+}
+
+.topnav {
+	overflow: hidden;
+	background-color: rgb(187, 75, 0);
+}
+
+.topnav a {
+	float: left;
+	color: var(--background-color);
+	padding: 8px 13px;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.topnav a.active {
+	color: var(--text-color);
+	text-decoration: underline;
+}
+
+ul {
+	list-style-type: none;
+}
+
+ul li h1 {
+	font-size: 20px;
+	margin-bottom: -10px;
+}
+
+a {
+	color: var(--text-color);
+}
+
+ul li p {
+	font-size: 14px;
+}
+
+ul li {
+	padding-bottom: 5px;
+}
+
+.content {
+	color: var(--text-color);
+}
