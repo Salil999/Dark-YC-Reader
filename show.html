@@ -5,23 +5,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" href="https://news.ycombinator.com/favicon.ico" />
 		<link rel="stylesheet" href="./styles/styles.css" />
-		<script type="text/javascript" src="./scripts/newest.js"></script>
+		<script type="text/javascript" src="./scripts/api.js"></script>
 	</head>
-	<body>
+	<body onload="loadData(SHOW_STORIES)">
 		<div class="topnav">
-			<a href="index.html">home</a>
+			<a href="index.html">top</a>
 			<a href="/new.html">new</a>
-			<a href="/top.html">top</a>
+			<a href="/best.html">best</a>
 			<a class="active" href="/show.html">show</a>
 			<a href="/ask.html">ask</a>
 			<a href="/jobs.html">jobs</a>
 		</div>
 		<div class="content">
-			<ul id="list">
-				<li>
-					<h1>Work in Progress...</h1>
-				</li>
-			</ul>
+			<ul id="list"></ul>
 		</div>
 	</body>
 </html>
