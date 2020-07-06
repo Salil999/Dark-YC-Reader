@@ -30,27 +30,27 @@ body {
 }
 
 ul {
-	margin: 0 auto;
-	margin-right: 6px;
 	list-style-type: none;
+	margin-right: 6px;
 	padding-inline-start: 16px;
+}
+
+ul li {
+	padding-bottom: 10px;
 }
 
 ul li h1 {
 	font-size: 18px;
-}
-
-a {
-	color: var(--text-color);
+	margin-bottom: 4px;
 }
 
 ul li p {
 	font-size: 14px;
+	margin-top: 0px;
 }
 
-ul li {
-	margin-left: -8px;
-	padding-bottom: 5px;
+a {
+	color: var(--text-color);
 }
 
 .content {
