@@ -8,10 +8,12 @@ const JOB_STORIES = 'https://hacker-news.firebaseio.com/v0/jobstories.json'
 
 async function loadData(type) {
 	const LIST = document.getElementById('list')
-	let topStories = await (await fetch(type)).json()
-	topStories.forEach(async (element) => {
+	let stories = await (await fetch(type)).json()
+	let length = stories.length
+	for (let i = 0; i < length; ++i) {
+		let element = stories[i]
 		LIST.appendChild(await createStoryEntry(element))
-	})
+	}
 }
 
 async function createStoryEntry(element) {
