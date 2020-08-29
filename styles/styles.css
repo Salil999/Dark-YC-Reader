@@ -1,8 +1,6 @@
 :root {
-	/* --text-color: #dcdcdc; */
-	--text-color: black;
-	/* --background-color: black; */
-	--background-color: white;
+	--text-color: #dcdcdc;
+	--background-color: black;
 	font-family: Verdana, Geneva, sans-serif;
 }
 
