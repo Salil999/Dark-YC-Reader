@@ -1,0 +1,14 @@
+<div class="content">
+    <ul id="list">
+        <% for( let i = 0; i < data.length; i++ ) { %>
+        <li>
+            <h1><a href="<%= data[i]['url'] %>" target="_blank"><%= data[i]['title'] %></a></h1>
+            <p><%= data[i]['subtext'] %></p>
+        </li>
+        <% } %>
+    </ul>
+</div>
+<div class="footer content">
+    <a href="/previous">&lt;</a>
+    <a href="/next">&gt;</a>
+</div>
